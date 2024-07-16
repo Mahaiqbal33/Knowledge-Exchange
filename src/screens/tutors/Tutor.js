@@ -57,7 +57,7 @@ const Tutor = observer(() => {
           <div className="popup-inner">
             <button className="close-btn" onClick={() => setSelectedTutor(null)}>Close</button>
             <h2>Tutor Details</h2>
-            <img src={`http://localhost:3333/${selectedTutor.profile_picture}`} alt={selectedTutor.name} className='tutor-image'/>
+            <img src={`http://localhost:3333/${selectedTutor.profile_picture}`} alt={selectedTutor.name} className='tutor-image-detail'/>
             <p>Name: {selectedTutor.name}</p>
             <p>Subject: {selectedTutor.subject}</p>
             <p>Qualifications: {selectedTutor.qualifications || 'Not specified'}</p>

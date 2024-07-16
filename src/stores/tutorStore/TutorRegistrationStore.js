@@ -33,11 +33,7 @@ class TutorRegistrationStore {
       formData.append("location", this.formData.location);
       formData.append("profilePicture", this.formData.profilePicture);
   
-      const response = await SC.postCall("/apply-tutor", formData, {
-        headers: {
-          "Content-Type": "multipart/form-data",
-        },
-      });
+      const response = await SC.postCall("/apply-tutor", formData);
   
       console.log("Tutor registration form submit response:", response);
   

@@ -143,7 +143,7 @@
 
 .popup-inner .tutor-image {
   width: 100px;
-  height: 100px;
+  height: 100px !important;
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 20px;
@@ -162,4 +162,20 @@
 .heading {
   margin-top: 30px;
   padding-top: 30px;
+}
+.tutor-image-detail{
+  width: 150px;
+  height: 150px;
+}
+.bottom-section {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: space-around; /* Distribute items evenly with space around them */
+  padding-top: 10px;
+}
+
+.tutor-item {
+  text-align: center;
+  margin: 20px;
+  width: 20%; /* Adjust the width to control how many tutors appear per row */
 }
